@@ -1,0 +1,33 @@
+.the-header {
+  @include te;
+
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 500;
+  box-shadow: 0 3px 6px #0000000d;
+
+  .header-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    // background-color: #fff;
+    color: $text-color;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 80px;
+    min-height: 80px;
+    max-width: 1440px;
+    margin: 0 auto;
+    @include xxl {
+      max-width: none;
+    }
+
+    .web-title {
+      font-size: $font-xl;
+      font-weight: weight(bold);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.main-content {
+  position: relative;
+  margin: 0 auto;
+  min-width: 0;
+  max-width: 800px;
+  width: 800px;
+  // max-width: 100%;
+  // width: 100%;
+
+  .link-area {
+    margin-top: 40px;
+    font-size: $font-lg;
+    text-align: center;
+  }
+
+  @import './home';
+  @import './api-page';
+}

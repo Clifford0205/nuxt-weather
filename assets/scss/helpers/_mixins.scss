@@ -1,0 +1,106 @@
+// ＝＝＝＝＝所有mixin放這裡 ＝＝＝＝＝
+@mixin xxl {
+  @media screen and (max-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin design-boundary {
+  @media screen and (max-width: 1455px) {
+    @content;
+  }
+}
+
+@mixin xml {
+  @media screen and (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media screen and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin short-mobile {
+  @media screen and (max-width: 767px) and (max-height: 736px) {
+    @content;
+  }
+}
+
+@mixin very-short-mobile {
+  @media screen and (max-width: 767px) and (max-height: 670px) {
+    @content;
+  }
+}
+
+@mixin xs-2 {
+  @media screen and (max-width: 374px) {
+    @content;
+  }
+}
+
+@mixin xxs {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin modal-reset {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+// RWD設定結束
+
+//垂直置中
+@mixin flex-center($direction) {
+  align-items: center;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+}
+
+//動畫效果
+@mixin te {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin one-line-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin multi-line-ellipsis($line) {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

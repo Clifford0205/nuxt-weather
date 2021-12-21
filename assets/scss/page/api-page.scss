@@ -1,0 +1,12 @@
+.api-page {
+  .card-container {
+    border: 1px solid var(--card-border);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+    .list-item {
+      margin-bottom: 15px;
+    }
+  }
+}

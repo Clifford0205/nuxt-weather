@@ -1,0 +1,16 @@
+.home {
+  padding: 5px;
+
+  .btn-secondary {
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+  }
+
+  .btn-secondary:not(:disabled):not(.disabled).active {
+    background-color: var(--btn-active-bg);
+  }
+
+  .result-show {
+    margin-top: 50px;
+  }
+}
