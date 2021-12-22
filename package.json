@@ -17,9 +17,11 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/proxy": "^2.1.0",
     "bootstrap": "^4.6.1",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.19.3",
+    "lodash": "^4.17.21",
     "node-sass": "^5.0.0",
     "nuxt": "^2.15.8",
     "sass": "^1.44.0",

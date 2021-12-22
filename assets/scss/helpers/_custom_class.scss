@@ -1,99 +1,10 @@
-.switcher-wrap {
-  position: relative;
-  width: 56px;
-  height: 28px;
-
-  input.switcher {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  }
-
-  label {
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 100%;
-    font-weight: bold;
-    position: relative;
-    margin: 0;
-    margin-bottom: 5px;
-    width: 100%;
-    height: 100%;
-    border-radius: 28px;
-    cursor: pointer;
-    font-size: $font-sm;
-
-    .switch-icon {
-      position: relative;
-    }
-
-    &.disabled {
-      &::after {
-        background: #efefee;
-      }
-    }
-
-    &::before {
-      content: '';
-      background: #e4e4e4;
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      border-radius: 25px;
-      -webkit-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      transition: all 0.3s;
-    }
-
-    &::after {
-      content: '';
-      background: #fff;
-      display: block;
-      position: absolute;
-      width: 23px;
-      height: 23px;
-      border-radius: 50%;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      left: 3px;
-      -webkit-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      transition: all 0.3s;
-      z-index: 99;
-      -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1);
-    }
-  }
-
-  input[type='checkbox'].switcher:checked + label::before {
-    background: $primary-color;
-  }
-
-  input[type='checkbox'].switcher:checked + label {
-    &.disabled {
-      &::before {
-        background: #7bacb5;
-      }
-    }
-  }
-
-  input[type='checkbox'].switcher:checked + label::after {
-    margin-left: 28px;
+.col-md-five {
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  @include mb-first-md {
+    flex: 0 0 20%;
+    max-width: 20%;
   }
 }

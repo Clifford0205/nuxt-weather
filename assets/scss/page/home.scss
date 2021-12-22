@@ -1,16 +1,18 @@
 .home {
-  padding: 5px;
-
-  .btn-secondary {
-    background-color: var(--btn-bg);
-    color: var(--text-color);
+  .search-area {
+    display: flex;
+    &-btn {
+      background-color: $primary-color;
+      color: #fff;
+      padding: 3px 15px;
+    }
   }
 
-  .btn-secondary:not(:disabled):not(.disabled).active {
-    background-color: var(--btn-active-bg);
-  }
-
-  .result-show {
-    margin-top: 50px;
+  .weather-info-area {
+    padding-top: 20px;
+    &-title {
+      font-size: $font-xl;
+      font-weight: weight(bold);
+    }
   }
 }

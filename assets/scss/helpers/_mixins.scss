@@ -29,6 +29,12 @@
   }
 }
 
+@mixin mb-first-md {
+  @media screen and (min-width: 767px) {
+    @content;
+  }
+}
+
 @mixin md {
   @media screen and (max-width: 767px) {
     @content;
