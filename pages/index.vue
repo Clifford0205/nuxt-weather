@@ -2,7 +2,11 @@
   <section class="main-content">
     <div class="home">
       <div class="search-area">
-        <input v-model="localText" type="text" @keydown.enter="handleSearch" />
+        <input
+          v-model.trim="localText"
+          type="text"
+          @keydown.enter="handleSearch"
+        />
         <button class="search-area-btn" @click="handleSearch">搜尋</button>
       </div>
       <div class="weather-info-area">
@@ -134,9 +138,9 @@ export default {
     },
     // 拿到地點
     async handleLocationSearch() {
-      // this.$axios
-      //   .get(`search/?query=${this.localText}`)
-      //   .then(res => console.log(res));
+      if (!this.localText) {
+        return;
+      }
       await this.$api.weather
         .fetchLocation({ location: this.localText })
         .then(res => {
