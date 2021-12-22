@@ -1,3 +1,67 @@
 .day {
   font-size: $font-md;
+
+  .date {
+    text-align: center;
+    font-weight: weight(bold);
+    margin-bottom: 15px;
+  }
+
+  .pie-chart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 60%;
+    background: conic-gradient(#aaaaaa 0% 100%);
+
+    &::after {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+
+    &-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 80%;
+      padding: 10% 0;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      @include md {
+        bottom: -50px;
+        transform: unset;
+        bottom: -80%;
+        left: unset;
+        top: unset;
+      }
+
+      &-title {
+        font-size: $font-xl;
+        font-weight: weight(bold);
+        color: #fff;
+        @include md {
+          font-size: $font-sm;
+          color: #000;
+        }
+      }
+
+      &-num {
+        font-weight: weight(bold);
+        color: #7fdbff;
+      }
+
+      .item-title {
+        font-weight: weight(bold);
+        color: #fff;
+      }
+    }
+  }
 }
