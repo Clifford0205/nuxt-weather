@@ -5,9 +5,8 @@
 @import './helpers/custom_class';
 @import './layouts/Header';
 
-// @import './components/SuperLikeAnimation';
+@import './components/component';
 @import './page/AllPage';
-// @import './fonts/my_font';
 
 .the-main-page {
   display: flex;

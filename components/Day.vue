@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-five">
+  <div class="col-five day">
     <img
       :src="`https://www.metaweather.com/static/img/weather/${weatherAbbr}.svg`"
       alt="天氣圖片"
