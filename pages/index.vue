@@ -11,12 +11,13 @@
         </h2>
         <div v-if="isWeatherDataExist" class="weather-list">
           <div class="row">
-            <div v-for="day in weatherData" :key="day.id" class="col-md-five">
+            <Day v-for="day in weatherData" :key="day.id" :day="day" />
+            <!-- <div v-for="day in weatherData" :key="day.id" class="col-md-five">
               <img
                 src="https://www.metaweather.com/static/img/weather/t.svg"
                 alt="天氣圖片"
               />
-            </div>
+            </div> -->
           </div>
         </div>
         <div v-if="localInfo == null" class="no-data">沒有符合的資料</div>
